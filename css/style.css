@@ -4,6 +4,7 @@ body{
     margin: 0;
     min-height: 1500px;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -105,7 +106,7 @@ nav {
     border-radius: 5px;
     border:none;
     box-shadow: 2px 0 4px #555;
-
+    font-size: 1.2em;
 }
 .close_btn {
     position: absolute;
@@ -163,3 +164,40 @@ nav {
     font-size: 1.4em;
 }
 /* Hero Content End */
+/* Start About Section */
+
+.about {
+    margin-top:106px;
+    padding-left:155px;
+    padding-right:155px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.about h2{
+    font-weight: 300;
+}
+.about p {
+    font-size: 0.95em;
+}
+.about_text_button {
+    background-color: #083643;
+    text-decoration: none;
+    color: #fff;
+    width:149px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    margin-top: 30px;
+    
+}
+/* End About Section */

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#full_menu").hide();
-    // $('#full_search').hide();
+    $('#full_search').hide();
     $('#show_menu').on('click', function() {
         $('#full_menu').show();
     });
