@@ -2,9 +2,14 @@
 body{
     padding: 0;
     margin: 0;
-    min-height: 1500px;
-    font-family: 'Roboto', sans-serif;
+    min-height: 2500px;
+    font-family: 'Roboto Slab', serif;
     font-weight: 300;
+    
+}
+section {
+    padding-left: 155px;
+    padding-right: 155px;
 }
 
 
@@ -20,8 +25,13 @@ header {
     
 }
 .hero {
-    background-image: url(../images/hero-l.png);
-    /* background-image: linear-gradient(-157deg, rgba(36,162,37,0.75),rgba(160,224,1,0.7)); */
+    /* background-image: url(../images/hero-l.png); */
+    background-image: linear-gradient(-157deg, rgba(36,162,37,0.75),rgba(160,224,1,0.7));
+    filter: saturate(20);
+    filter: contrast(160%);
+    
+    /* filter: hue-rotate(121deg); */
+    /* filter: sepia(100%); */
     opacity: 0.78;
     filter: alpha(opacity=78); /* IE8 and earlier */
     width: 100%;
@@ -201,3 +211,41 @@ nav {
     
 }
 /* End About Section */
+/* Start Features Section */
+.features {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.features_text {
+    width: 666px;
+    font-weight: 300;
+}
+.features_text h2 , .features_text h3 {
+    font-weight: 300;
+}
+.features_boxes {
+    width: 666px;
+    display: flex;
+}
+.feature_box {
+    
+    width: 220px;
+    height: 100px;
+    border-bottom: solid 3px #b7b7b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s;
+    cursor: pointer;
+}
+.feature_box:hover {
+    border-color: #24a227;
+}
+.feature_icon {
+    color: #24a227 ;
+}
+
+/* End Feature Section */
