@@ -21,20 +21,14 @@ section {
 header {
     height: 660px;
     width: 100%;
-    background: url(../images/hero.jpg) no-repeat;
+    background: url(../images/hero_bg.jpg) no-repeat;
     
     
 }
+
 .hero {
     /* background-image: url(../images/hero-l.png); */
-    background-image: linear-gradient(-157deg, rgba(36,162,37,0.75),rgba(160,224,1,0.7));
-    filter: saturate(20);
-    filter: contrast(160%);
-    
-    /* filter: hue-rotate(121deg); */
-    /* filter: sepia(100%); */
-    opacity: 0.78;
-    filter: alpha(opacity=78); /* IE8 and earlier */
+    /* opacity: 0.75; */
     width: 100%;
     height: 100%;
 }
@@ -290,6 +284,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     
+}
+.blog_image {
+    width: 120px;
+    min-height: 110px;
 }
 .card_details {
     margin-left:25px;

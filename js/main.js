@@ -21,20 +21,35 @@ $(document).ready(function() {
 
     // Full Page Menu Toggle
     $('#show_menu').on('click', function() {
-        $('#full_menu').show();
+        
+        $('#full_menu').show(function() {
+            
+        });
+        
+
     });
+    
     $('#close_full_menu').on('click', function() {
-        $('#full_menu').hide();
+        
+        $('#full_menu').hide(function() {
+            
+        });
+
     });
+    
 
 
     // Full Page Search Toggle 
 
     $('#show_search').on('click', function() {
-        $('#full_search').show();
+        $('#full_search').show(function() {
+
+        });
     });
     $('#close_search_form').on('click', function() {
-        $('#full_search').hide();
+        $('#full_search').hide(function() {
+
+        });
     });
 
     // Featured buttons click
@@ -53,6 +68,7 @@ $(document).ready(function() {
         $('.secure_btn img').attr('src', 'images/lock_icon.png');
         $('.secure_btn').css({'borderColor':'#24a227'});
         // Show the text belong to this element
+        $('.secure').addClass('animated fadeIn');
         $('.secure').show();
     });
 
@@ -69,6 +85,7 @@ $(document).ready(function() {
         // appling styles
         $('.heart_btn img').attr('src', 'images/heart_icon_colored.png');
         $('.heart_btn').css({'borderColor':'#24a227'});
+        $('.heart').addClass('animated fadeInDown');
         $('.heart').show();
     });
 
@@ -85,9 +102,13 @@ $(document).ready(function() {
         // appling styles
         $('.support_btn img').attr('src', 'images/support_icon_colored.png');
         $('.support_btn').css({'borderColor':'#24a227'});
+        $('.support').addClass('animated fadeInUp');
         $('.support').show();
     });
 
-
+    // Animations
+    $('.hero-text').addClass('animated bounceInLeft');
+    $('.hero-boxes').addClass('animated fadeInUp');
+    $('.about_img').addClass('animated fadeIn delay-2s');
 
 })
